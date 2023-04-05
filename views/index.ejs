@@ -1,0 +1,172 @@
+<%- include ("../partials/header") %>
+
+
+<!-- jumbotron -->
+<div class="jumbotron mx-auto bg-transparent jumbotron-fluid"></div>
+<div id="jumbotron-call-to-action" class="container pb-5">
+    <h3 class="mx-auto text-center">
+        EMINENT CARE LLC is a full-service real estate investment company based in Baltimore, Maryland. 
+        We specialize in buying investment properties and providing real estate solutions for sellers.
+    </h3>
+    <p class="mx-auto text-center pt-3 pb-3">
+        We buy, fix, and sell Maryland real estate as part of our commitment to improving local 
+        communities and helping fellow investors participate in the real estate market.
+    </p>
+    <div class="text-center">
+        <a href="about" class="btn btn-success d-block d-md-inline-block" title="About page">See How You Can Work With Us ></a>
+    </div>
+</div>
+
+
+<!-- Content -->
+<section class="container mt-5 pb-5">
+    <div id="wwd-title" class="d-flex justify-content-center pt-5">
+        <h1 style="color: #333;">What We Do:</h1>
+    </div>
+    <div id="wwd-row-one" class="row text-center mt-5">
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card shadow flex-fill" style="min-height: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>CREATIVE</b></h5>
+                    <hr class="mt-0 w-75 mx-auto">
+                    <p class="card-text">We offer creative solutions to your problems. 
+                        Our expert team develops tailored strategies to deliver real results and help you achieve your goals, whether it's investing in real estate or managing properties. 
+                        Trust us to be your go-to partner for all your business needs with our commitment to quality and customer satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card shadow flex-fill" style="min-height: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>INVESTMENT</b></h5>
+                    <hr class="mt-0 w-75 mx-auto">
+                    <p class="card-text">We specialize in buying investment properties and providing real estate solutions for sellers. 
+                        Our team has years of experience in identifying the right properties to invest in and managing them effectively to deliver high returns for our clients. 
+                        Let us help you grow your wealth through real estate investing.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card shadow flex-fill" style="min-height: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>COMMUNITY</b></h5>
+                    <hr class="mt-0 w-75 mx-auto">
+                    <p class="card-text">We are committed to improving local communities through our real estate investments. 
+                        By revitalizing neglected properties, we help create safer, more attractive neighborhoods that benefit everyone. 
+                        Join us in our mission to make a positive impact in Maryland communities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NAV LINK - SELL YOUR HOME -->
+<span id="SellYourHome" ></span>
+
+
+<!-- CONTACT FORM -->
+<div id="contact" class="container-fluid mt-5 pb-5">
+    <h2 class="text-center mb-4"><b>Sell Your Home To Us</b></h2>
+    <hr class="mt-0 w-25 mx-auto">
+    <h4 class="text-center mb-4">Receive an offer within 24 hours!</h4>
+    <div class="row">
+      <div  class="col-md-6 mx-auto">
+        <form class="shadow p-4 rounded" method="POST" action="/SellYourHomeContact">
+          <div class="form-group">
+            <label for="name">Your Name*</label>
+            <input type="text" class="form-control" name="Contact[name]" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="propertyAddress">Property Address*</label>
+            <input type="text" class="form-control" name="Contact[propertyAddress]" id="propertyAddress" placeholder="Enter your property address" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="phone">Phone*</label>
+              <input type="tel" class="form-control" name="Contact[phone]" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email">Email*</label>
+              <input type="email" class="form-control" name="Contact[email]" id="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <h6>Opt in to receive text messages</h6>
+                <label class=" " for="optIn">
+                    <input class="" type="checkbox" name="Contact[optIn]" id="optIn" value="Yes">
+                    <b>Yes</b>, I would like to receive texts from Acidic Solutions.
+                </label>
+                <label for="optOut">
+                    <input type="checkbox" name="Contact[optIn]" id="optOut" value="No">
+                    <b>No</b>, I do not wish to receive texts from Acidic Solutions.
+                </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" class="container-fluid pt-5 pb-5">
+    <h2 class="text-center mb-5">Testimonials</h2>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner shadow">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text"><blockquote>I was impressed with the level of professionalism and expertise of the team at Acidic Solutions. They helped me navigate the complex process of buying an investment property and made it seamless. Highly recommended!</blockquote></p>
+                                <p class="card-text text-center"><small style="color: #000; font-weight: bold;">John Kentry, Real Estate Investor</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text"><blockquote>Solutions has been my go-to partner for property management services. They are responsive, reliable, and have saved me countless hours of stress and hassle. I highly recommend their services to anyone looking for peace of mind.</blockquote></p>
+                                <p class="card-text text-center"><small style="color: #000; font-weight: bold;">Julie Less, Property Owner</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text"><blockquote>The team at Prime Property Solutions helped me sell my house quickly and for a great price. They made the process simple and stress-free. I would definitely work with them again in the future.</blockquote></p>
+                                <p class="card-text text-center"><small style="color: #000; font-weight: bold;">Samantha Nguyen, Homeowner</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text"><blockquote>I recently invested in a multi-family property with the help of Elite Investments. The team was knowledgeable, professional, and helped me find a great deal. I'm excited about the potential for this property and can't wait to see the returns.</blockquote></p>
+                                <p class="card-text text-center"><small style="color: #000; font-weight: bold;">Ryan Johnson, Real Estate Investor</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text"><blockquote>Greenwood Real Estate Solutions helped me find the perfect rental property for my family. They listened to my needs and preferences and showed me properties that fit my budget. I appreciate their patience and attention to detail throughout the process.</blockquote></p>
+                                <p class="card-text text-center"><small style="color: #000; font-weight: bold;">Megan Lee, Renter</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%- include ("../partials/footer") %>

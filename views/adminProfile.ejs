@@ -1,0 +1,80 @@
+<%- include ("../partials/header") %>
+<div id="accordion" class="accordion">
+    <div class="card">
+        <div class="card-header text-center bg-success" id="headingOne">
+            <h2 class="mb-0 display-4">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #333; text-decoration: none;">
+                Sell Your Home Contact
+              </button>
+            </h2>
+          </div>
+          
+      <div class="row justify-content-center">
+        <% sYHContact.forEach(function(contact) { %>
+          <div class="col-12">
+            <a class="collapsed" style="text-decoration: none;"href="#general-contact-<%=contact.id%>" data-toggle="collapse" aria-expanded="false" aria-controls="general-contact-<%=contact.id%>">
+            <div class="card">
+              <div class="card-header bg-secondary text-white text-center">
+                <h6>
+                  <%= contact.name %>
+                </h6>
+              </div>
+              <div class="collapse text-dark" id="general-contact-<%=contact.id%>">
+                <div class="card-body text-center text-black">
+                  <p><strong>Address:</strong> <%= contact.propertyAddress %></p>
+                  <p><strong>Phone:</strong> <%= contact.phone %></p>
+                  <p><strong>Email:</strong> <%= contact.email %></p>
+                  <p><strong>Opt-in:</strong> <%= contact.optIn %></p>
+                </div>
+              </div>
+            </div>
+        </a>
+          </div>
+        <% }); %>
+      </div>
+      
+      
+    </div>
+  
+    <div class="card">
+        <div class="card-header text-center text-white bg-primary" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn text-dark btn-link collapsed" style="text-decoration: none;"data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              General Contact
+            </button>
+          </h5>
+        </div>
+              <div class="row justify-content-center">
+                <% contact.forEach(function(contact) { %>
+                  <div class="col-12">
+                    <a class="collapsed" style="text-decoration: none;" href="#general-contact-<%=contact.id%>" data-toggle="collapse" aria-expanded="false" aria-controls="general-contact-<%=contact.id%>">
+                      <div class="card">
+                        <div class="card-header bg-secondary text-white text-center">
+                          <h6>
+                            <%= contact.name %>
+                          </h6>
+                        </div>
+                        <div class="collapse text-dark" id="general-contact-<%=contact.id%>">
+                          <div class="card-body text-center text-black">
+                            <p><strong>Address:</strong> <%= contact.propertyAddress %></p>
+                            <p><strong>Phone:</strong> <%= contact.phone %></p>
+                            <p><strong>Email:</strong> <%= contact.email %></p>
+                            <p><strong>Message:</strong> <%= contact.message %></p>
+                            <p><strong>Reason for contacting:</strong> <%= contact.rFContacting %></p>
+                            <p><strong>Opt-in:</strong> <%= contact.optIn %></p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                <% }); %>
+              </div>
+            </div>
+          </div>
+          
+        
+  </div>
+  
+  
+
+<%- include ("../partials/footer") %>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Fully responsive project with a backend">
+        <link rel="stylesheet" href="/main.css">
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+        <!-- animated css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+        <script src="../dropzone.js"></script>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <title>wire frame chal</title>
+    </head>
+    <body>
+
+        <!--HEADER-->
+        <header class="justify-content-between align-items-center pt-5">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+              <div class="text-center" id="nav-logo">
+                <a href="/" class="logo">
+                  <span id="">Acidic Soltuions</span> 
+                </a>
+                <br>
+                <span style="color:#333; font-weight: bold;">We Are Here To Help!</span>
+              </div>
+              <div class="text-center d-none d-md-block" id="nav-call-to-action">
+                <span id="nav-phone-number-text">Call Us Today!</span>
+                <br>
+                <a href="tel:4432038396" class="" id="nav-phone-number">(443) 203-8396</a>
+              </div>
+            </div> 
+            <br>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="d-block d-md-none d-flex justify-content-start" id="nav-call-to-action">
+                    <span id="nav-phone-number-text">Call Us Today!</span>
+                    <a href="tel:4432038396" class="" id="nav-phone-number">(443) 203-8396</a>
+                  </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                <ul class="nav nav-pills">
+
+                    <% if(page_name === "index") { %>
+                  <li class="nav-item"><a href="/#SellYourHome" class="nav-link active"><b>Sell Your Home</b></a></li>
+                  <%}else {%>
+                    <li class="nav-item"><a href="/#SellYourHome" class="nav-link">Sell Your Home</a></li>
+                    <% }%>
+
+                    <% if(page_name === "about") { %>
+                  <li class="nav-item"><a href="/about" class="nav-link active">About Us</a></li>
+                  <% } else { %>
+                    <li class="nav-item"><a href="/about" class="nav-link">About Us</a></li>
+                    <% } %>
+
+                    <% if(page_name === "contact") { %>
+                  <li class="nav-item"><a href="/contact" class="nav-link active">Contact Us</a></li>
+                  <% } else { %>
+                    <li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
+                    <% }%>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          
+            
+        

@@ -1,0 +1,339 @@
+*, html{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+  
+
+#form-login {
+    margin-top: 10rem;
+}
+
+#form-signup {
+    margin-top: 10rem;
+}
+
+#form-forgot {
+    margin-top: 10rem;
+}
+
+#form-reset {
+    margin-top: 10rem;
+}
+
+#form-contact {
+    margin-top: 10rem;
+}
+
+.navbar-brand {
+    padding-left: 5rem;
+}
+
+#headerUltwo li a:hover{
+    animation-name: spin;
+    animation-duration: 700ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out; 
+
+}
+
+@keyframes spin {
+    from {
+        font-size: 16px;
+    }
+    to {
+        font-size: 16.5px;
+    }
+}
+
+#alerts div h1 {
+    color: black;
+    font-size: 28px;
+}
+
+#alerts div {
+    width: 10rem;
+    font-size: 10px;
+    border: solid 1px 3px black;
+}
+
+#lawyers {
+    margin-top: 8rem;
+}
+
+#cNames {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#contactArea {
+    height: 5rem;
+}
+
+.navColor {
+    color: #B7B8C0;
+}
+
+#profileImg {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#profileImgLink {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#profileImgEdit {
+    position: absolute;
+    padding-top: 0.2rem;
+    padding-left: 10px;
+    opacity: 0;
+    transition: 0.5 all;
+}
+
+#profileImgLink:hover #profileImgEdit{
+    opacity: 0.7;
+    color: grey;
+}
+
+#profileImgLink:hover {
+    opacity: 0.8;
+    background: grey;
+}
+
+#profileContact {
+    font-size: 20px;
+}
+
+#navbar {
+    z-index: 1;
+}
+
+#hide {
+    position: absolute;
+    z-index: 0;
+    top: -1000px;
+}
+
+#avatarInput {
+    background: lightgrey;
+    height: 250px;
+    width: 250px;
+}
+
+#avatarInput:hover {
+    opacity: 0.6;
+    transition: none;
+    transform: none;
+    margin: 0;
+}
+
+.jumbotron {
+    position: fixed;
+    background-image: url(baltimore.jpg);
+    background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  z-index: -1;
+    
+}
+
+#jumbotron-call-to-action {
+    margin: -33.5rem auto 0 !important;
+    max-width: 30rem;
+    color: #fff;
+    font-weight: bold;
+    position: relative; 
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #3d3d3d;
+    padding: 20px 0;
+}
+
+.nav-pills .nav-link {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {
+    background-color: #fff !important;
+    color: #3d3d3d !important;
+}
+
+.active {
+    background-color: #fff !important;
+    color: #3d3d3d !important;
+}
+
+.logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+
+#nav-logo {
+    margin-right: 10rem;
+}
+
+#nav-call-to-action {
+    margin-left: 10rem
+}
+
+#nav-phone-number-text {
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#nav-phone-number {
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#nav-phone-number:hover {
+    color: #555;
+    text-decoration: none;
+}
+
+
+@media (max-width: 766px) {
+    nav {
+        background-color: #fff !important;
+    }
+
+    nav ul {
+        display:block !important;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+
+    .nav-pills .nav-link {
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+        width: 100% !important;
+        padding: 0px 0px !important;
+    }
+
+    #nav-logo {
+        margin-right: 0rem !important;
+    }
+
+    #navbarCollapse {
+        justify-content: end !important;
+    }
+
+    #nav-call-to-action {
+        margin-left: 0 !important;
+    }
+
+    #nav-phone-number-text {
+        color: #333;
+        justify-content: start !important;
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+
+    #nav-phone-number {
+        color: #333;
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+
+    #jumbotron-call-to-action {
+        margin: -32rem auto 0 !important;
+        font-size: 1rem !important;
+    }
+
+    #jumbotron-call-to-action h3 {
+        font-size: 1.4rem !important;
+    }
+    
+}
+
+
+/* TESTIMONIALS */
+
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.1em 1em 0.1em 1em;
+}
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 2em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float:right;
+    font-size:2em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+
+
+
+/* FOOTER */
+.logo-footer {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo-footer:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-ul li a {
+ Color: #3c82aa;
+}
+
+.footer-ul li a:hover {
+    Color: #777;
+   }

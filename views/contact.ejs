@@ -1,0 +1,52 @@
+<%- include ("../partials/header") %>
+
+<div class="container col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+        <form id="form-contact" class="form-contact shadow w-100" method="POST" action="/contactForm">
+
+            <div id="contact" class="container-fluid pb-5">
+                <h2 class="text-center pt-4 mb-4"><b>Contact Us</b></h2>
+                <div class="row">
+                  <div  class="col-md-8 mx-auto">
+                      <div class="form-group">
+                        <label for="name">Your Name*</label>
+                        <input type="text" class="form-control" name="Contact[name]" id="name" placeholder="Enter your name" required>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group w-100">
+                          <label for="phone">Phone*</label>
+                          <input type="tel" class="form-control" name="Contact[phone]" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group w-100">
+                          <label for="email">Email*</label>
+                          <input type="email" class="form-control" name="Contact[email]" id="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group w-100">
+                        <label for="rFContacting">Reason For Contacting:</label>
+                        <input type="text" name="Contact[rFContact]" id="rFContacting" class="form-control" placeholder="Reason For Contacting" required>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="message">Message:</label>
+                            <textarea id="contactArea" class="w-100" name="Contact[message]" id="message" placeholder=" Message" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <h6>Opt in to receive text messages</h6>
+                            <label class=" " for="optIn">
+                                <input class="" type="checkbox" name="Contact[optIn]" id="optIn" value="Yes">
+                                <b>Yes</b>, I would like to receive texts from Acidic Solutions.
+                            </label>
+                            <label for="optOut">
+                                <input type="checkbox" name="Contact[optIn]" id="optOut" value="No">
+                                <b>No</b>, I do not wish to receive texts from Acidic Solutions.
+                            </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-success btn-block">Submit</button>
+                  </div>
+                </div>
+              </div>
+    </form>
+</div>
+
+
+<%- include ("../partials/footer") %>
