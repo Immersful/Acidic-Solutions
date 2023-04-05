@@ -1,5 +1,4 @@
-<%- include ("../partials/header") %>
-
+<% layout('layouts/boilerplate') %>
 <div class="container col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
         <form id="form-contact" class="form-contact shadow w-100" method="POST" action="/contactForm">
 
@@ -21,11 +20,11 @@
                           <input type="email" class="form-control" name="Contact[email]" id="email" placeholder="Enter your email address" required>
                         </div>
                         <div class="form-group w-100">
-                        <label for="rFContacting">Reason For Contacting:</label>
+                        <label for="rFContacting">Reason For Contacting:*</label>
                         <input type="text" name="Contact[rFContact]" id="rFContacting" class="form-control" placeholder="Reason For Contacting" required>
                         </div>
                         <div class="form-group w-100">
-                            <label for="message">Message:</label>
+                            <label for="message">Message:*</label>
                             <textarea id="contactArea" class="w-100" name="Contact[message]" id="message" placeholder=" Message" required></textarea>
                         </div>
 
@@ -47,6 +46,3 @@
               </div>
     </form>
 </div>
-
-
-<%- include ("../partials/footer") %>

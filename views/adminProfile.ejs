@@ -1,4 +1,4 @@
-<%- include ("../partials/header") %>
+<% layout('layouts/boilerplate') %>
 <div id="accordion" class="accordion">
     <div class="card">
         <div class="card-header text-center bg-success" id="headingOne">
@@ -29,6 +29,9 @@
               </div>
             </div>
         </a>
+        <form class="d-inline" action="/syh-admin/<%=contact._id%>?_method=DELETE" method="POST">
+            <button class="btn btn-danger">Delete</button>
+        </form>
           </div>
         <% }); %>
       </div>
@@ -66,15 +69,12 @@
                         </div>
                       </div>
                     </a>
+                    <form class="d-inline" action="/admin/<%=contact._id%>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
                   </div>
                 <% }); %>
               </div>
             </div>
-          </div>
-          
-        
+          </div>  
   </div>
-  
-  
-
-<%- include ("../partials/footer") %>
