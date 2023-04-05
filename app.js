@@ -20,7 +20,7 @@ const {contactSchema, sYHContactSchema} = require("./schemas");
 
 
 const dbUrl = process.env.DB_URL || "mongodb://localhost/AcidicSolutions";
-// "mongodb://localhost/AcidicSolutions"
+
 //connectiong to a specific database
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
